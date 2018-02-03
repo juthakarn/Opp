@@ -5,11 +5,9 @@ private int pagenumber
 private String auther
 
 public Book (String title,int pagenumber,String auther){
-
 	this.title = title;
 	this.pagenumber = pagenumber;
 	this.auther = auther;
-
 }
 
 public String gettitle(){
