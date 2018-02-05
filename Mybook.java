@@ -1,18 +1,34 @@
 public class Mybook{
 
 public static void main(String[] args){
-	Book Little_Prince;
-	Little_Prince = new Book("Little Prince",89,"Jason Ham");
+	Book Mybook1;
+	Mybook1 = new Book();
+	
+	Book Mybook2;
+	Mybook2 = new Book("javaprogramming");
 
-	Book Harry_Potter;
-	Harry_Potter = new Book("Harry Potter",238,"Jk Rolling");
+	Book Mybook3;
+	Mybook3 = new Book("cprogramming",500);
 
-	Book Doraemon;
-	Doraemon = new Book("Doraemon",56);
+	Mybook1.settitle("oop");
+	Mybook1.setpagenumber(1000);
 
-	Little_Prince.showBook();
-	Harry_Potter.showBook();
-	Doraemon.showBook();
+	Mybook2.settitle("network");
+	Mybook2.setpagenumber(600);
+
+	Mybook1.showBook();
+	Mybook2.showBook();
+	Mybook3.showBook();
+
+	Mybook1.setauther("jk");
+	Mybook1.showBook();
+
+	if(Mybook1.samebook("oop",1000,"JK")){
+		System.out.println("true");
+	}
+	else{
+		System.out.println("flase");
+	}
 }
 
 }
